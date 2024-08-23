@@ -8,15 +8,27 @@
  "engine": "InnoDB",
  "field_order": [
   "message_url",
+  "apikey",
   "srcname",
   "source",
-  "to"
+  "to",
+  "messagebody"
  ],
  "fields": [
   {
    "fieldname": "srcname",
    "fieldtype": "Data",
    "label": "Source Name"
+  },
+  {
+   "fieldname": "messagebody",
+   "fieldtype": "Data",
+   "label": "Message"
+  },
+  {
+   "fieldname": "apikey",
+   "fieldtype": "Data",
+   "label": "Api Key"
   },
   {
    "fieldname": "source",
