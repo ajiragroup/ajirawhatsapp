@@ -11,8 +11,8 @@ class whatsappmessage(Document):
  def msg(self,token, recipient,message_url,):
 #    message_url=message_url
     messagetosend = {
-     \"type\":\"text\",
-     \"text\":\"hello s\"
+     "type": "text",
+     "text": messagebody
      }
    payload = {
         'message': messagetosend,
