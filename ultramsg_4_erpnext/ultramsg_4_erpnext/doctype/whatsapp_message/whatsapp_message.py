@@ -10,13 +10,24 @@ class whatsappmessage(Document):
  @frappe.whitelist()
  def msg(self,token, recipient,message_url,):
 #    message_url=message_url
+   messagetosend = {
+    \"type\":\"text\",
+    \"text\":\"hello s\"
+    }
    payload = {
-        'token': token,
-        'to': recipient,
-        'body':"This message is for testing",
+        'message': messagetosend,
+        'src.name': srcname,
+        'channel': "whatsapp",
+        'source': source,
+        'destination': recipient,
+        'disablePreview' : 'False"
        }
     
-   headers = {'content-type': 'application/x-www-form-urlencoded'}
+   headers = {
+    'content-type': 'application/x-www-form-urlencoded',
+    'accept': 'application/json',
+    'apikey':apikey
+   }
 
    try:
            response = requests.post(message_url, data=payload, headers=headers)
