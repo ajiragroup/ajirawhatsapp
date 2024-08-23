@@ -13,9 +13,12 @@ class whatsappmessage(Document):
     @frappe.whitelist()
     def msg(
         self,
-        token,
+        apikey,
+        srcname,
+        source,
         recipient,
         message_url,
+        messagebody,
     ):
         #    message_url=message_url
         messagetosend = {"type": "text", "text": messagebody}
