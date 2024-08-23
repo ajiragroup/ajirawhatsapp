@@ -9,7 +9,7 @@
 frappe.ui.form.on("whatsapp message", {
     refresh: function(frm) {
        
-      frm.add_custom_button(__("click"), function() {
+      frm.add_custom_button(__("Send"), function() {
         
         frm.call("msg", {
 			token: frm.doc.token,
