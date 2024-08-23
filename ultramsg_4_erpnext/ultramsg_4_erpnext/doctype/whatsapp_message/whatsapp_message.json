@@ -8,31 +8,25 @@
  "engine": "InnoDB",
  "field_order": [
   "message_url",
-  "url",
-  "token",
-  "from",
+  "srcname",
+  "source",
   "to"
  ],
  "fields": [
   {
-   "fieldname": "url",
+   "fieldname": "srcname",
    "fieldtype": "Data",
-   "label": "document url"
+   "label": "Source Name"
   },
   {
-   "fieldname": "token",
-   "fieldtype": "Data",
-   "label": "token"
-  },
-  {
-   "fieldname": "from",
+   "fieldname": "source",
    "fieldtype": "Phone",
-   "label": "From Number ( for testing )"
+   "label": "From Number"
   },
   {
    "fieldname": "to",
    "fieldtype": "Phone",
-   "label": "To Number ( for testing )",
+   "label": "To Number",
    "options": "phone"
   },
   {
