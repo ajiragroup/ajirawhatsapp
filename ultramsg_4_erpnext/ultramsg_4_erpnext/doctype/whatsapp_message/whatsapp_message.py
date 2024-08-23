@@ -10,10 +10,10 @@ class whatsappmessage(Document):
  @frappe.whitelist()
  def msg(self,token, recipient,message_url,):
 #    message_url=message_url
-   messagetosend = {
-    \"type\":\"text\",
-    \"text\":\"hello s\"
-    }
+    messagetosend = {
+     \"type\":\"text\",
+     \"text\":\"hello s\"
+     }
    payload = {
         'message': messagetosend,
         'src.name': srcname,
