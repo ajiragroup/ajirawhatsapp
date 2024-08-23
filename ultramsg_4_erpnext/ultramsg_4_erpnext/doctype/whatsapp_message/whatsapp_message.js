@@ -12,9 +12,12 @@ frappe.ui.form.on("whatsapp message", {
       frm.add_custom_button(__("Send"), function() {
         
         frm.call("msg", {
-			token: frm.doc.token,
+			apikey: frm.doc.apikey,
 			recipient :frm.doc.to,
 			message_url:frm.doc.message_url,
+			messagebody:frm.doc.messagebody,
+			srcname:frm.doc.srcname,
+			source:frm.doc.source
         
 				}).then(r => {
 			frappe.msgprint(r.message);; 	
